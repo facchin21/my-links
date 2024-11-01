@@ -1,5 +1,5 @@
-import bgLightImage from "../assets/image/Background-Light.png";
-import bgDarkImage from "../assets/image/Background-Dark.png";
+import bgLightImage from "../assets/image/Background-light.png";
+import bgDarkImage from "../assets/image/Background-dark.png";
 
 export const bgLight = {
   title: "fondo light",
