@@ -1,4 +1,5 @@
 import imageProfile from '../assets/image/profile.png'
+import { ButtonSharedProfile } from './ButtonSharedProfile';
 import { SwitchMode } from './SwitchMode';
 
 export const Header = ({ name }) => {
@@ -16,6 +17,7 @@ export const Header = ({ name }) => {
         >{name}</h1>
       </div>
       <SwitchMode/>
+      <ButtonSharedProfile/>
     </header>
   )
 }

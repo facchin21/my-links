@@ -1,12 +1,15 @@
-import { BsGlobe } from "react-icons/bs";
+// import { BsGlobe } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import imageWeb from '../assets/image/iconweb.png';
+import imageProfile from '../assets/image/profile.png'
+
 export const socialMedia = [
     {
         id : '01',
-        icon : BsGlobe,
+        icon : imageWeb,
         name : 'Portfolio',
         link : 'https://ferminfacchin.website',
     },
@@ -35,3 +38,10 @@ export const socialMedia = [
         link : 'https://www.instagram.com/programate__/',
     }
 ]
+
+export const profile = {
+    name : 'Fermin Facchin Facchin',
+    description : `Desarrollador Web Front-end`,
+    Icon : imageProfile,
+    link : 'https://programate.website'
+}

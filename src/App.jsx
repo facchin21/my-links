@@ -6,6 +6,7 @@ import { Theme } from './context/ThemeProvider';
 import { Header } from './components/Header'
 import { useContext } from 'react';
 import './App.css'
+import { ToastContainer } from 'react-toast';
 
 function App() {
   const name = 'Programate';
@@ -32,6 +33,7 @@ function App() {
           ))}
         </div>
       </main>
+      <ToastContainer/>
     </>
   )
 }
