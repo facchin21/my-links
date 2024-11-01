@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <main
-        className='flex flex-col justify-center items-center min-h-screen
+        className='flex flex-col justify-center py-8 items-center min-h-screen
            bg-cover bg-center bg-no-repeat w-full font-poppins'
         style={{
           backgroundImage: darkMode ? `url(${bgDark.image})`
