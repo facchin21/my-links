@@ -1,7 +1,7 @@
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaWhatsapp } from "react-icons/fa";
+import { toast } from 'react-hot-toast'
 import React from 'react'
-import { toast } from "react-toast";
 
 export const ButtonsShared = ({ link, name }) => {
 

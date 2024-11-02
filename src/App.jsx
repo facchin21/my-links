@@ -4,9 +4,9 @@ import { ButtonMedia } from './components/ButtonMedia';
 import { socialMedia } from './data/socialMedia.data'
 import { Theme } from './context/ThemeProvider';
 import { Header } from './components/Header'
+import { Toaster } from 'react-hot-toast';
 import { useContext } from 'react';
 import './App.css'
-import { ToastContainer } from 'react-toast';
 
 function App() {
   const name = 'Programate';
@@ -33,7 +33,9 @@ function App() {
           ))}
         </div>
       </main>
-      <ToastContainer/>
+      <Toaster
+       position="top-center"
+       reverseOrder={false}/>
     </>
   )
 }
