@@ -14,4 +14,4 @@ Tailwind CSS: Implementado para diseñar un estilo moderno y totalmente personal
 
 ## Autor
 **Fermin Facchin Quiroga**  
-[Enlace a tu perfil de GitHub](https://github.com/facchin21)
+[My profile](https://github.com/facchin21)
