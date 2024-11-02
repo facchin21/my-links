@@ -35,7 +35,7 @@ export const ButtonMedia = ({ Icon, name, link }) => {
             <Icon size={32} />
           )
         }
-        <h2 className='text-lg sm:text-2xl'>{name}</h2>
+        <h3 className='text-lg sm:text-2xl'>{name}</h3>
         <PiDotsThreeVertical
           size={32}
           onClick={handleDotsClick}
