@@ -1,12 +1,28 @@
 import { Theme } from '../context/ThemeProvider';
 import { ButtonsShared } from './ButtonsShared';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 
-export const Modal = ({ onClose, Icon, name, link, description = '' }) => {
+export const Modal = ({ isVisible, onClose, Icon, name, link, description = '' }) => {
   const { darkMode } = useContext(Theme);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isVisible, onClose])
+
+
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className={`rounded-lg p-12 relative w-80 sm:w-96 font-poppins 
+      <div className={`rounded-lg py-12 px-6 relative w-80 sm:w-96 font-poppins 
         ${darkMode ? 'bg-bgDark text-textDark' : 'bg-bgLight text-textLight'}`}>
         <span className='absolute top-4 left-1/2 transform -translate-x-1/2
          font-semibold text-sm'>Shared Link</span>
@@ -36,7 +52,11 @@ export const Modal = ({ onClose, Icon, name, link, description = '' }) => {
           {/* Información del usuario */}
           <div className="text-center mb-6">
             <h2 className="text-2xl font-semibold">{name}</h2>
-            <p className='text-sm sm:text-lg font-light'>{link}</p>
+            <a href={link} target='_blank'
+            className='opacity-80 transition-all 
+            duration-100 hover:opacity-100'>
+              {link}
+            </a>
             <p className='opacity-75'>{description}</p>
           </div>
         </div>

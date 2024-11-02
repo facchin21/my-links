@@ -28,6 +28,7 @@ export const ButtonSharedProfile = () => {
             {
                 show && (
                     <Modal onClose={hanldeShared}
+                    isVisible={show}
                     Icon={Icon}
                     name={name}
                     link={link}
