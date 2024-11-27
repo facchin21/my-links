@@ -14,4 +14,4 @@ Tailwind CSS: Implementado para diseñar un estilo moderno y totalmente personal
 
 ## Autor
 **Fermin Facchin Quiroga**  
-[Portafolio](https://ferminfacchin.website)
+[Portafolio](https://links-fermin.netlify.app/)
