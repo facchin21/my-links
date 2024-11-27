@@ -10,8 +10,8 @@ Con MyLinks, logro tener un espacio digital único y adaptado a mis preferencias
 ReactJS: Utilizado para la creación de una interfaz de usuario dinámica e interactiva.
 Tailwind CSS: Implementado para diseñar un estilo moderno y totalmente personalizable.
 
-[Visita el proyecto aquí](https://programate.website/)
+[Visita el proyecto aquí](https://links-fermin.netlify.app/)
 
 ## Autor
 **Fermin Facchin Quiroga**  
-[Portafolio](https://links-fermin.netlify.app/)
+[Portafolio](https://ferminfacchin.website)
